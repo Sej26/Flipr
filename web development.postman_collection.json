@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "a45b47eb-cdf6-4746-991b-6fd0d86fa126",
+		"name": "web development",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15170154"
+	},
+	"item": [
+		{
+			"name": "Customer Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"Sajal Nema\",\r\n\"email\": \"cde@gmail.com\",\r\n\"mobileNumber\":\"58395894839\",\r\n\"city\":\"Narsinghpur\",\r\n\"customerId\": \"cde@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Customer Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerName\": \"Sajal Nema\",\r\n\"email\": \"cde@gmail.com\",\r\n\"mobileNumber\":\"58395894839\",\r\n\"city\":\"Narsinghpur\",\r\n\"customerId\": \"cde@gmail.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ad-qBE1U/WnFMli9vRtfjNhAnvymT4\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 07:45:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"customerName\": \"Sajal Nema\",\n    \"email\": \"cde@gmail.com\",\n    \"mobileNumber\": \"58395894839\",\n    \"city\": \"Narsinghpur\",\n    \"customerId\": \"cde@gmail.com\",\n    \"_id\": \"65571a0350535cd3e347a191\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Purchase Order Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\": \"Top\",\r\n\"quantity\":1,\r\n\"pricing\": 500,\r\n\"mrp\":800,\r\n\"purchaseOrderId\": \"Order02\",\r\n\"customerId\":\"655707670e59108d420fe05a\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/purchaseOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"purchaseOrder"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Purchase Order Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Top\",\r\n\"quantity\":1,\r\n\"pricing\": 500,\r\n\"mrp\":800,\r\n\"purchaseOrderId\": \"Order02\",\r\n\"customerId\":\"655707670e59108d420fe05a\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/purchaseOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"purchaseOrder"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "167"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a7-tEN641gp4Q6mxRrJU9zWcXYmlCk\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 07:47:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"productName\": \"Top\",\n    \"quantity\": 1,\n    \"pricing\": 500,\n    \"mrp\": 800,\n    \"purchaseOrderId\": \"Order02\",\n    \"customerId\": \"655707670e59108d420fe05a\",\n    \"_id\": \"65571a9850535cd3e347a193\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Shipping Details Request",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\":\"abc\",\r\n\"city\":\"abc\",\r\n\"pincode\":\"abc\",\r\n\"purchaseOrderId\":\"abc\",\r\n\"customerId\":\"655707670e59108d420fe05a\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/shipppingdetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shipppingdetails"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Shipping Details Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"address\":\"abc\",\r\n\"city\":\"abc\",\r\n\"pincode\":\"abc\",\r\n\"purchaseOrderId\":\"abc\",\r\n\"customerId\":\"655707670e59108d420fe05a\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/shipppingdetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"shipppingdetails"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "151"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"97-cgrXeJgRScO5qqtwtHhvBI/MlyI\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 07:40:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"address\": \"abc\",\n    \"city\": \"abc\",\n    \"pincode\": \"abc\",\n    \"purchaseOrderId\": \"abc\",\n    \"customerId\": \"655707670e59108d420fe05a\",\n    \"_id\": \"655718e731fd95c63157b7dd\",\n    \"__v\": 0\n}"
+				}
+			]
+		}
+	]
+}
