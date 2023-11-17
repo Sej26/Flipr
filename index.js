@@ -2,13 +2,14 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const app = express();
+require('dotenv').config()
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect('mongodb+srv://admin-sejal:Sejal123@cluster0.uwpxwnf.mongodb.net/Customers', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(`${process.env.MONGODB_URI}`, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const customerRoutes = require('./router/customerRoutes.js');
 const purchaseOrderRoutes = require('./router/purchaseOrderRoutes.js');
